@@ -1,13 +1,17 @@
+# Greeting
+def welcome():
+    print('Welcome to CStanton-dev\'s Calculator')
+
 # A simple calculator
 def calculate():
-    operation = input('''
-    Please type in the math operation you would like to complete:
-    + for addition
-    - for subtraction
-    * for multiplication
-    / for division
-    -------------------------------------------------------------
-    ''')
+
+    instructions = 'Please type in the math operation you would like to complete:\n'
+    instructions += '\t+ for addition\n'
+    instructions += '\t- for subtraction\n'
+    instructions += '\t* for multiplication\n'
+    instructions += '\t/ for division\n'
+    instructions += '-------------------------------------------------------------\n'
+    operation = input(instructions)
 
     # User Input
     number_1 = int(input('Enter your first number: '))
@@ -43,10 +47,7 @@ def calculate():
 # Funtion to ask the user if they want to run use the calculator again
 def again():
     # User Input
-    calc_again = input('''
-  Do you want to calculate again?
-  Please type Y from YES or N for NO.
-  ''')
+    calc_again = input('Would you like to do something else? ')
 
     if calc_again.upper() == 'Y':
         calculate()
@@ -59,5 +60,5 @@ def again():
         print('Please provide a valid input...')
         again()
 
-
+welcome()
 calculate()
