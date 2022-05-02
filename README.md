@@ -12,6 +12,7 @@ This repository is my journey through the world of Python
 - String Formatters
 - Conditional Statements
 - PEP 8 Style Guidelines
+- Error Handling
 
 ## Acknowledgements
 
