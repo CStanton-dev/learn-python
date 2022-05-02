@@ -38,4 +38,22 @@ def calculate():
         print('You have not typed a valid operator, please run the program again.')
 
 
+# Funtion to ask the user if they want to run use the calculator again
+def again():
+    # User Input
+    calc_again = input('''
+  Do you want to calculate again?
+  Please type Y from YES or N for NO.
+  ''')
+
+    if calc_again == 'Y' or 'YES' or 'yes':
+        calculate()
+
+    elif calc_again == 'N' or 'NO' or 'no':
+        print('Exiting...')
+
+    else:
+        calculate()
+
+
 calculate()
